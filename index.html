@@ -1,224 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sujit K A — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- NAV -->
-  <nav class="nav">
-    <span class="nav-logo">sujit<span class="accent">.</span></span>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-      <span class="toggle-icon">◐</span>
-    </button>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="about">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <p class="hero-eyebrow">Hi, I'm</p>
-        <h1 class="hero-name">Sujit K A</h1>
-        <p class="hero-tagline">I want to know how everything works.</p>
-        <p class="hero-bio">
-          First-year B.Tech student in CS&amp;IT at Reva University, Bengaluru.
-          My curiosity doesn't stop at code — it extends to machines, science,
-          the universe, and everything in between. Right now I'm building a
-          strong foundation in systems programming with C and Python.
-        </p>
-        <div class="hero-meta">
-          <span class="meta-chip">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-            Bengaluru, India
-          </span>
-          <span class="meta-chip">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-            B.Tech CS&amp;IT — Reva University
-          </span>
-          <span class="meta-chip status-open">
-            <span class="status-dot"></span>
-            1st year · learning actively
-          </span>
-        </div>
-        <div class="hero-cta">
-          <a href="mailto:ssujit0512@gmail.com" class="btn btn-primary">Get in touch</a>
-          <a href="#skills" class="btn btn-ghost">See my skills ↓</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="avatar-ring">
-          <div class="avatar">SK</div>
-        </div>
-        <div class="curiosity-orbit" aria-hidden="true">
-          <span class="orbit-label" style="--angle:0deg">C</span>
-          <span class="orbit-label" style="--angle:72deg">Python</span>
-          <span class="orbit-label" style="--angle:144deg">OS</span>
-          <span class="orbit-label" style="--angle:216deg">Memory</span>
-          <span class="orbit-label" style="--angle:288deg">Logic</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section" id="skills">
-    <div class="section-inner">
-      <h2 class="section-title">What I actually know</h2>
-      <p class="section-sub">Hands-on experience from coursework and self-study. No fluff.</p>
-
-      <div class="skills-block">
-        <div class="skill-group">
-          <div class="skill-group-header">
-            <span class="skill-lang-badge mono">C</span>
-            <h3>Systems Programming</h3>
-          </div>
-          <ul class="skill-list">
-            <li>
-              <span class="skill-dot"></span>
-              <div>
-                <strong>Bit manipulation &amp; memory</strong>
-                <p>Bitwise ops, bit fields, shift operations, union-based memory tricks</p>
-              </div>
-            </li>
-            <li>
-              <span class="skill-dot"></span>
-              <div>
-                <strong>File I/O with structs</strong>
-                <p>Binary file read/write, struct serialisation, binary vs text mode</p>
-              </div>
-            </li>
-            <li>
-              <span class="skill-dot"></span>
-              <div>
-                <strong>Dynamic memory allocation</strong>
-                <p>malloc, calloc, realloc, free — and the bugs that come with them</p>
-              </div>
-            </li>
-            <li>
-              <span class="skill-dot"></span>
-              <div>
-                <strong>CSV parsing &amp; strings</strong>
-                <p>Manual string manipulation, tokenising, parsing structured text</p>
-              </div>
-            </li>
-            <li>
-              <span class="skill-dot"></span>
-              <div>
-                <strong>2D arrays &amp; grid graphics</strong>
-                <p>2D array parameter syntax, grid-based rendering in the terminal</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-group">
-          <div class="skill-group-header">
-            <span class="skill-lang-badge mono python">Python</span>
-            <h3>Python</h3>
-          </div>
-          <ul class="skill-list">
-            <li>
-              <span class="skill-dot"></span>
-              <div>
-                <strong>Core language</strong>
-                <p>Data types, control flow, functions, file handling</p>
-              </div>
-            </li>
-            <li>
-              <span class="skill-dot"></span>
-              <div>
-                <strong>Scripting &amp; automation</strong>
-                <p>Writing scripts to automate small tasks and data processing</p>
-              </div>
-            </li>
-          </ul>
-
-          <div class="learning-now">
-            <span class="learning-label">Currently exploring</span>
-            <div class="learning-chips">
-              <span>Quantum computing concepts</span>
-              <span>How operating systems work</span>
-              <span>Computer architecture</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="tools-row">
-        <span class="tools-label">Tools I use</span>
-        <div class="tools-list">
-          <span class="tool-tag mono">GCC</span>
-          <span class="tool-tag mono">GDB</span>
-          <span class="tool-tag mono">Git</span>
-          <span class="tool-tag mono">Linux</span>
-          <span class="tool-tag mono">VS Code</span>
-          <span class="tool-tag mono">Bash</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HONEST NOTE -->
-  <section class="section note-section">
-    <div class="section-inner">
-      <div class="honest-note">
-        <span class="note-icon">✦</span>
-        <p>
-          I'm at the start of my journey. No internships, no published projects yet —
-          just a genuine love for understanding how things work and a habit of
-          writing code to find out. If that sounds like someone you'd want on your team
-          someday, let's talk.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="section-inner">
-      <h2 class="section-title">Say hello</h2>
-      <p class="section-sub">I'm always happy to connect — whether it's about code, ideas, or just curiosity.</p>
-      <div class="contact-cards">
-        <a href="mailto:ssujit0512@gmail.com" class="contact-card">
-          <span class="contact-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          </span>
-          <div>
-            <span class="contact-label">Email</span>
-            <span class="contact-val">ssujit0512@gmail.com</span>
-          </div>
-          <span class="contact-arrow">→</span>
-        </a>
-        <a href="https://github.com/" target="_blank" rel="noopener" class="contact-card">
-          <span class="contact-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          </span>
-          <div>
-            <span class="contact-label">GitHub</span>
-            <span class="contact-val">Add your username</span>
-          </div>
-          <span class="contact-arrow">→</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>Built by Sujit K A &nbsp;·&nbsp; <span class="mono">2025</span></p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sujit Ammangi | Portfolio</title><meta name="description" content="Portfolio of Sujit Ammangi, B.Tech CS&amp;IT student at REVA University.">
+<style>:root{--bg:#f6f8fb;--fg:#10202e;--muted:#4a5b6b;--card:#fff;--line:#d9e2ec;--accent:#0a7a52;--btn:#0a3d62}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1220;--fg:#e8f0fa;--muted:#9fb3c8;--card:#111c30;--line:#22324d;--accent:#7cffb2;--btn:#4fc3f7}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header{background:linear-gradient(135deg,#0a1830,#12345c);color:#fff;padding:56px 20px 40px}
+.wrap{max-width:860px;margin:0 auto}h1{margin:0 0 6px;font-size:2.4rem}.tag-line{margin:0;color:#7cffb2;font-size:1.1rem}
+nav{margin-top:22px;display:flex;gap:18px;flex-wrap:wrap}nav a{color:#cfe3ff;text-decoration:none;border-bottom:2px solid transparent}nav a:hover{border-color:#7cffb2}
+main{padding:10px 20px 40px}section{margin-top:38px}h2{font-size:1.5rem;margin:0 0 14px;border-left:5px solid var(--accent);padding-left:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}.card h3{margin:0 0 6px;font-size:1.1rem}.card p{margin:0 0 10px;color:var(--muted);font-size:.97rem}
+.card a{color:var(--btn)}.meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tag{font-size:.8rem;border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--muted)}
+.btn{font-size:.9rem;text-decoration:none;background:var(--btn);color:#fff!important;border-radius:8px;padding:5px 12px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none;margin:0}.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+.links{padding:0;list-style:none;margin:0}.links li{margin:6px 0}.links a{color:var(--btn)}
+footer{text-align:center;color:var(--muted);padding:24px 20px 40px;font-size:.9rem}</style></head><body>
+<header><div class="wrap"><h1>Sujit Ammangi</h1><p class="tag-line">B.Tech CS&amp;IT student | problem solving in C and C++ | building in public</p>
+<nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></div></header>
+<main class="wrap">
+<section id="about"><h2>About</h2><p>I'm Sujit Ammangi, a 3rd-semester B.Tech CS&amp;IT student at REVA University, Bengaluru, curious about how things work. I practise problem solving in C and C++ and keep all my work on GitHub. I'm aiming for a software engineering internship at a global company such as JP Morgan.</p></section>
+<section id="projects"><h2>Projects</h2><div class="grid">
+<article class="card"><h3>hello-world-c</h3><p>A Hello World program in C, used to practise Git and GitHub.</p><div class="meta"><span class="tag">C</span><a class="btn" href="https://github.com/SujitKA/hello-world-c">View repo</a></div></article>
+<article class="card"><h3>leetcode-solutions</h3><p>LeetCode solutions in C, grouped by topic, each with notes and a result screenshot. 9 problems solved so far.</p><div class="meta"><span class="tag">C</span><a class="btn" href="https://github.com/SujitKA/leetcode-solutions">View repo</a></div></article>
+<article class="card"><h3>HackerRank-3rdSem-Portfolio</h3><p>HackerRank solutions in C++: one numbered folder with a README for each of 5 problems.</p><div class="meta"><span class="tag">C++</span><a class="btn" href="https://github.com/SujitKA/HackerRank-3rdSem-Portfolio">View repo</a></div></article>
+<article class="card"><h3>Fake News Detection</h3><p>Team project: a TF-IDF and Logistic Regression model with a GUI and a project report.</p><div class="meta"><span class="tag">Python</span></div></article>
+</div></section>
+<section id="skills"><h2>Skills</h2><ul class="chips"><li>C</li><li>C++</li><li>Python</li><li>Git &amp; GitHub</li><li>VS Code</li><li>GitLens</li><li>Live Share</li><li>Problem solving</li></ul></section>
+<section id="contact"><h2>Contact</h2><ul class="links">
+<li>GitHub: <a href="https://github.com/SujitKA">github.com/SujitKA</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/sujit-ammangi">linkedin.com/in/sujit-ammangi</a></li>
+<li>Instagram: <a href="https://www.instagram.com/ssujit_codes">@ssujit_codes</a></li></ul></section>
+</main><footer>&copy; 2026 Sujit Ammangi</footer></body></html>
